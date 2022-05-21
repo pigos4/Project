@@ -1,4 +1,15 @@
 import React, { useState } from "react";
+import axios from 'axios';
+
+function postRequest (data){
+  axios.post('http://localhost:4009/messages', data)
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
 
 const Input = () => {
   const [name, setName] = useState("");
@@ -49,7 +60,7 @@ const Input = () => {
         placeholder="What have you learned so far?"
         onChange={updateDescription}
       />
-      <button type="submit"> Submit </button>
+      <button type="submit" onClick={()=>{postRequest({name,title,description})}}> Submit </button>
     </form>
   );
 };
