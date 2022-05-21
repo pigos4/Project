@@ -49,7 +49,7 @@ const Input = () => {
         placeholder="What have you learned so far?"
         onChange={updateDescription}
       />
-      <button type="submit"> Submit </button>
+      <button className="post-button" type="submit"> Submit </button>
     </form>
   );
 };
