@@ -14,7 +14,7 @@ function postRequest (data){
 const Input = () => {
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
+  const [text, setText] = useState("");
 
   const updateName = (event) => {
     const name = event.target.value;
@@ -25,8 +25,8 @@ const Input = () => {
     setTitle(title);
   };
   const updateDescription = (event) => {
-    const description = event.target.value;
-    setDescription(description);
+    const text = event.target.value;
+    setText(text);
   };
 
   return (
@@ -61,7 +61,7 @@ const Input = () => {
         placeholder="What have you learned so far?"
         onChange={updateDescription}
       />
-      <button className="post-button" type="submit" onClick={()=>{postRequest({name,title,description})}}> Submit </button>
+      <button className="post-button" type="submit" onClick={()=>{postRequest({name,title,text})}}> Submit </button>
     </form>
   );
 };
