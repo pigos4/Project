@@ -60,7 +60,7 @@ const Input = () => {
         placeholder="What have you learned so far?"
         onChange={updateDescription}
       />
-      <button type="submit" onClick={()=>{postRequest({name,title,description})}}> Submit </button>
+      <button className="post-button" type="submit" onClick={()=>{postRequest({name,title,description})}}> Submit </button>
     </form>
   );
 };
