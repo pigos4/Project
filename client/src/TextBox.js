@@ -1,17 +1,12 @@
-import React from 'react';
+import React from "react";
 
-
-const TextBox = (props) =>
-
-{
+const TextBox = (props) => {
     
-    <div>
-        <h3 className='article-name'>{props.name}</h3>
-    
-        <p className='article-text'>{props.text}</p> 
-        <botton className= 'del-button'>Delete</botton>
-    </div>
-}
-
+return (<div>
+    <h3 className="article-name">{props.name}</h3>
+    <p className="article-text">{props.text}</p>
+    <button className="del-button">Delete</button>
+  </div>)
+};
 
 export default TextBox;
