@@ -45,7 +45,7 @@ const Input = () => {
         Title:
       </label>
       <input
-        className="input-text"
+        className="input-title"
         type="text"
         name="title"
         placeholder="Put your title"
@@ -55,6 +55,7 @@ const Input = () => {
         Description:
       </label>
       <input
+        className="input-text"
         type="text"
         name="description"
         placeholder="What have you learned so far?"
