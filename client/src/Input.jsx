@@ -20,7 +20,7 @@ const Input = () => {
 
   return (
     <form className="input-box">
-      <label for="name" name="name">
+      <label htmlFor="name" name="name">
         Name:
       </label>
       <input
@@ -30,7 +30,7 @@ const Input = () => {
         placeholder="Put your name"
         onChange={updateName}
       />
-      <label for="title" name="title">
+      <label htmlFor="title" name="title">
         Title:
       </label>
       <input
@@ -40,7 +40,7 @@ const Input = () => {
         placeholder="Put your title"
         onChange={updateTitle}
       />
-      <label for="description" name="description">
+      <label htmlFor="description" name="description">
         Description:
       </label>
       <input
