@@ -1,11 +1,18 @@
 [
-{"name": "Margarita Glushkova",
+{"id":1,
+"name": "Margarita Glushkova",
 "title": "Why React needs a key prop",
 "text": "React’s key prop gives you the ability to control component instances. Each time React renders your components, it’s calling your functions to retrieve the new React elements that it uses to update the DOM. If you return the same element types, it keeps those components/DOM nodes around, even if all the props changed."},
-{"name": "Daniel Piga",
-"title": "Array.prototype.reduce()",
-"text": "React’s key prop gives you the ability to control component instances. Each time React renders your components, it’s calling your functions to retrieve the new React elements that it uses to update the DOM. If you return the same element types, it keeps those components/DOM nodes around, even if all the props changed."},
-{"name": "Irina Shilova",
-"title": "What is HTTP?",
-"text": "React’s key prop gives you the ability to control component instances. Each time React renders your components, it’s calling your functions to retrieve the new React elements that it uses to update the DOM. If you return the same element types, it keeps those components/DOM nodes around, even if all the props changed."}
+{
+  "id": 2,
+  "name": "Daniel Piga",
+  "title": "Array.prototype.reduce()",
+  "text": "React’s key prop gives you the ability to control component instances. Each time React renders your components, it’s calling your functions to retrieve the new React elements that it uses to update the DOM. If you return the same element types, it keeps those components/DOM nodes around, even if all the props changed."
+},
+{
+  "id": 3,
+  "name": "Irina Shilova",
+  "title": "What is HTTP?",
+  "text": "React’s key prop gives you the ability to control component instances. Each time React renders your components, it’s calling your functions to retrieve the new React elements that it uses to update the DOM. If you return the same element types, it keeps those components/DOM nodes around, even if all the props changed."
+}
 ]

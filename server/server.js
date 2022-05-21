@@ -26,7 +26,7 @@ app.delete("/messages/:id", (req, res) => {
   let findByIndex = data.findIndex(
     (data) => data.id == req.params.id
   );
-  bookings.splice(findByIndex, 1);
+  data.splice(findByIndex, 1);
   if (findByIndex === -1) res.status(404).send("The person with these details is not in our database");
   res.sendStatus(200);
 });
