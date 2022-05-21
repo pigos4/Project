@@ -1,10 +1,14 @@
 import React from "react";
+import icon from "./logo1.svg";
 
 const TextBox = (props) => {
     
 return (
   <div className="article-box">
-    <h3 className="article-name">{props.name}</h3>
+    <div style={{display:"flex"}}>
+      <img style={{ width: 20, padding:20 }} src={icon} />
+      <h3 className="article-name">{props.name}</h3>
+    </div>
     <p className="article-text">{props.text}</p>
     <button className="post-button">Delete</button>
   </div>
